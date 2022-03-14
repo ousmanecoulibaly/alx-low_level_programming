@@ -1,28 +1,14 @@
 #include <stdio.h>
 #include <unistd.h>
-int _putchar(char c);
 /**
- * main - Print a sentence without using printf or puts etc.
- *
- * Return: 1
+ * main - Prints "and that piece of art is useful" - Dora Korpar, 2015-10-19"
+ * followed by a new line, to standard error.
+ * .
+ * Return : 1 if success.
  */
 int main(void)
 {
-int i;
-char array[] = "and that piece of art is useful\" -  Dora Korpar, 2015-10-19";
-for (i = 0; array[i] != '\0'; i++)
-	_putchar(array[i]);
-_putchar('\n');
+write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 return (1);
-
-}
-/**
- * _putchar - write the character c to stdout
- * @c: The character to print 
- */
-
-int _putchar(char c)
-{
-return (write(1 , &c , 1));
 
 }

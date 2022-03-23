@@ -5,3 +5,4 @@
  *       used in the functions nested loops directory.
  */
 int _putchar(char c);
+void print_alphabet(void);

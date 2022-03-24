@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - prints all natural numbers from n to 98.
+ * print_to_98 - prints all natural numbers from n to 98.
  *@n: Starting number
  * Return: Always 0.
  */

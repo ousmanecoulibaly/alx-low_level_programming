@@ -6,20 +6,21 @@
  */
 int main(void)
 {
-unsigned long int a, b, c, d;
-a = 1;
-b = 1;
-c = 0;
-for (c = 0; c < 98; c++)
+unsigned long int fib1, fib2, fib3, num;
+fib1 = 1;
+fib2 = 2;
+fib3 = 3;
+printf("%lu, ", fib1);
+printf("%lu, ", fib2);
+for (num = 3; num < 98; num++)
 {
-d = a + b;
-a = b;
-b = d;
-printf("%lu", a);
-if (c < 97)
-printf(", ");
+printf("%lu, ", fib3);
+fib1 = fib2;
+fib2 = fib3;
+fib3 = fib1 + fib2;
 }
-printf("\n");
+printf("%lu\n", fib3);
+
 return (0);
 
 }

@@ -6,21 +6,21 @@
  */
 int main(void)
 {
-unsigned long int fib1, fib2, fib3, num;
+unsigned long int fib1, fib2, fib3, num, count;
+count = 0;
 fib1 = 1;
 fib2 = 2;
-fib3 = 3;
+num = 98;
 printf("%lu, ", fib1);
 printf("%lu, ", fib2);
-for (num = 3; num < 98; num++)
+while (count < num)
 {
-printf("%lu, ", fib3);
+fib3 = fib1 + fib2;
+count++;
+printf("%lu\n", fib3);
 fib1 = fib2;
 fib2 = fib3;
-fib3 = fib1 + fib2;
 }
-printf("%lu\n", fib3);
-
 return (0);
 
 }

@@ -6,21 +6,20 @@
  */
 int main(void)
 {
-unsigned long int m, n, o, p;
-m = 1;
-n = 1;
-o = 0;
-for (; m <= 4000000;)
+unsigned long int a, b, c, sum, limit;
+limit = 4000000;
+sum = 0;
+a = 1;
+b = 1;
+c = a + b;
+while (c < limit)
 {
-p = m + n;
-m = n;
-n = p;
-if (m % 2 == 0)
-{
-o = o + m;
+sum += c;
+a = b + c;
+b = c + a;
+c = a + b;
 }
-}
-printf("%lu\n", n);
+printf("%lu\n", sum);
 
 return (0);
 

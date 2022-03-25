@@ -6,20 +6,22 @@
  */
 int main(void)
 {
-long int i;
-long int first = 1;
-long int second = 1;
-long int sum = 2;
-long int total;
-for (i = 1; i < 4000000 ; i++)
+unsigned long int m, n, o, p;
+m = 1;
+n = 1;
+o = 0;
+for (; m <= 4000000;)
 {
-sum = first + second;
-if (sum % 2 == 0)
-total += sum;
-first = second;
-second = sum;
+p = m + n;
+m = n;
+n = p;
+if (m % 2 == 0)
+{
+o = o + m;
 }
-printf("%ld\n", total);
+}
+printf("%lu\n", n);
+
 return (0);
 
 }

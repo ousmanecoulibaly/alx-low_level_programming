@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  *  main - positive and negative
- *  ²
+ * 
  *  Return: Always 0 (Success)
  */
 
